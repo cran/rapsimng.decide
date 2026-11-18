@@ -1,0 +1,25 @@
+Package: rapsimng.decide
+Title: Decision-Oriented Analysis Interface for APSIM Next Generation
+        Outputs
+Version: 0.1.0
+Authors@R: 
+    person("Bangyou", "Zheng", email = "zheng.bangyou@gmail.com", role = c("aut", "cre"))
+Description: Provides a high-level interface for analysing Agricultural Production Systems sIMulator ('APSIM') Next Generation simulation outputs to support structured decision-making workflows. The package coordinates domain-specific decision modules (e.g. cultivar selection, experimental design) and standardises their outputs into reproducible decision reports. It does not perform 'APSIM' simulations or implement decision logic directly, but serves as an orchestration layer connecting analysis results with reporting and downstream interpretation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0)
+Imports: dplyr, tibble, rapsimng, rlang, rapsimng.decide.core,
+        rapsimng.decide.cultivar, rapsimng.decide.sowing,
+        rapsimng.decide.nitrogen
+Config/testthat/edition: 3
+URL: https://decide.rapsimng.bangyou.me/,
+        https://github.com/byzheng/rapsimng.decide
+BugReports: https://github.com/byzheng/rapsimng.decide/issues
+Config/roxygen2/version: 8.1.1
+NeedsCompilation: no
+Packaged: 2026-10-30 23:43:12 UTC; zhe00a
+Author: Bangyou Zheng [aut, cre]
+Maintainer: Bangyou Zheng <zheng.bangyou@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-11-18 21:20:02 UTC
